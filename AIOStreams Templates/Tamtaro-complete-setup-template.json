@@ -2583,8 +2583,8 @@
       },
       {
         "__if": "inputs.languages includes German",
-        "__value": [
-          "https://raw.githubusercontent.com/Braresa/Releases-Regex/German/regexes.json"
+        "__value": 
+          "https://raw.githubusercontent.com/Braresa/Releases-Regex/refs/heads/main/Portuguese/regexes.json"
         ]
       }
     ],
@@ -2618,7 +2618,7 @@
       {
         "__if": "inputs.languages includes German",
         "__value": [
-          "https://raw.githubusercontent.com/Braresa/Releases-Regex/German/expressions.json"
+          "https://raw.githubusercontent.com/Braresa/Releases-Regex/refs/heads/main/Portuguese/expressions.json"
         ]
       }
     ],

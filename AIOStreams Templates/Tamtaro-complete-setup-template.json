@@ -2578,7 +2578,7 @@
       {
         "__if": "!inputs.languages includes German",
         "__value": [
-          "https://raw.githubusercontent.com/Braresa/Releases-Regex/Portuguese/regexes.json"
+          "https://raw.githubusercontent.com/Braresa/Releases-Regex/refs/heads/main/Portuguese/regexes.json"
         ]
       },
       {

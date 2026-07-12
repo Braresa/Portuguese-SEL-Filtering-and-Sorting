@@ -24,7 +24,7 @@
     "enabled": true
   },
   {
-    "expression": "/*UHD/FHD Webrip*/ resolution(quality(streams,'Webrip'), '2160p','1440p','1080p')",
+    "expression": "/*UHD/FHD WEBRip*/ resolution(quality(streams,'WEBRip'), '2160p','1440p','1080p')",
     "enabled": true
   },
   {
@@ -40,7 +40,7 @@
     "enabled": true
   },
   {
-    "expression": "/*HD Webrip*/ resolution(quality(streams,'Webrip'), '720p')",
+    "expression": "/*HD WEBRip*/ resolution(quality(streams,'WEBRip'), '720p')",
     "enabled": true
   },
   {
@@ -56,19 +56,7 @@
     "enabled": true
   },
   {
-    "expression": "/*SD Webrip*/ resolution(quality(streams,'Webrip'), '576p','480p')",
-    "enabled": true
-  },
-  {
-    "expression": "/*UHD/FHD HDTV*/ resolution(quality(streams,'HDTV'), '2160p','1440p','1080p')",
-    "enabled": true
-  },
-  {
-    "expression": "/*HD HDTV*/ resolution(quality(streams,'HDTV'), '720p')",
-    "enabled": true
-  },
-  {
-    "expression": "/*SD HDTV*/ resolution(quality(streams,'HDTV'), '576p','480p')",
+    "expression": "/*SD WEBRip*/ resolution(quality(streams,'WEBRip'), '576p','480p')",
     "enabled": true
   },
   {
@@ -84,15 +72,35 @@
     "enabled": true
   },
   {
-    "expression": "/*HD HC HD-Rip*/ resolution(quality(streams,'HC HD-Rip'), '720p')",
+    "expression": "/*UHD/FHD HC HDRip*/ resolution(quality(streams,'HDRip'), '2160p','1440p','1080p')",
     "enabled": true
   },
   {
-    "expression": "/*SD HC HD-Rip*/ resolution(quality(streams,'HC HD-Rip'), '576p','480p')",
+    "expression": "/*HD HC HDRip*/ resolution(quality(streams,'HC HDRip'), '720p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*SD HC HDRip*/ resolution(quality(streams,'HC HDRip'), '576p','480p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*UHD/FHD HDTV*/ resolution(quality(streams,'HDTV'), '2160p','1440p','1080p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*HD HDTV*/ resolution(quality(streams,'HDTV'), '720p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*SD HDTV*/ resolution(quality(streams,'HDTV'), '576p','480p')",
     "enabled": true
   },
   {
     "expression": "/*SD DVDRip*/ resolution(quality(streams,'DVDRip'), '576p','480p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*UHD/FHD SCR*/ resolution(quality(streams,'SCR'), '2160p','1440p','1080p')",
     "enabled": true
   },
   {
@@ -104,6 +112,10 @@
     "enabled": true
   },
   {
+    "expression": "/*UHD/FHD TC*/ resolution(quality(streams,'TC'), '2160p','1440p','1080p')",
+    "enabled": true
+  },
+  {
     "expression": "/*HD TC*/ resolution(quality(streams,'TC'), '720p')",
     "enabled": true
   },
@@ -112,11 +124,19 @@
     "enabled": true
   },
   {
+    "expression": "/*UHD/FHD TS*/ resolution(quality(streams,'TS'), '2160p','1440p','1080p')",
+    "enabled": true
+  },
+  {
     "expression": "/*HD TS*/ resolution(quality(streams,'TS'), '720p')",
     "enabled": true
   },
   {
     "expression": "/*SD TS*/ resolution(quality(streams,'TS'), '576p','480p')",
+    "enabled": true
+  },
+  {
+    "expression": "/*UHD/FHD CAM*/ resolution(quality(streams,'CAM'), '2160p','1440p','1080p')",
     "enabled": true
   },
   {

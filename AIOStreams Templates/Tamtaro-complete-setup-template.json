@@ -2542,20 +2542,20 @@
     ],
     "excludedRegexPatterns": [],
     "syncedExcludedRegexUrls": [
-      "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-excluded-regex.json"
+      "https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-excluded-regex.json"
     ],
     "includedRegexPatterns": [],
     "requiredRegexPatterns": [],
     "preferredRegexPatterns": [],
     "rankedRegexPatterns": [
       {
-        "__if": "!inputs.languages includes German",
+        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
         "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
         "pattern": "/^(?!𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍))𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)$/",
         "score": 0
       },
       {
-        "__if": "!inputs.languages includes German",
+        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
         "pattern": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json>",
         "name": "",
         "score": 0
@@ -2571,12 +2571,24 @@
         "pattern": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json>",
         "name": "",
         "score": 0
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "name": "Braresa'𝚜 Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
+        "pattern": "/^(?!Braresa'𝚜 Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍))Braresa's Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)$/",
+        "score": 0
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "pattern": "<SYNCED: https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/regexes.json>",
+        "name": "",
+        "score": 0
       }
     ],
     "syncedPreferredRegexUrls": [],
     "syncedRankedRegexUrls": [
       {
-        "__if": "!inputs.languages includes German",
+        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
         ]
@@ -2586,31 +2598,37 @@
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/regexes.json"
         ]
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__value": [
+          "https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/regexes.json"
+        ]
       }
     ],
     "syncedPreferredStreamExpressionUrls": [
-      "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-PSEs.json"
+      "https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-PSEs.json"
     ],
     "syncedExcludedStreamExpressionUrls": [
       {
         "__if": "inputs.coreFilter includes extended",
         "__value": [
-          "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-extended.json"
+          "https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-extended.json"
         ]
       },
       {
         "__if": "inputs.coreFilter includes standard",
         "__value": [
-          "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json"
+          "https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json"
         ]
       }
     ],
     "syncedIncludedStreamExpressionUrls": [
-      "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ISEs.json"
+      "https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ISEs.json"
     ],
     "syncedRankedStreamExpressionUrls": [
       {
-        "__if": "!inputs.languages includes German",
+        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
         ]
@@ -2619,6 +2637,12 @@
         "__if": "inputs.languages includes German",
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json"
+        ]
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__value": [
+          "https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/expressions.json"
         ]
       }
     ],
@@ -2981,12 +3005,12 @@
       },
       {
         "__if": "inputs.coreFilter includes extended",
-        "expression": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-extended.json>",
+        "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-extended.json>",
         "enabled": true
       },
       {
         "__if": "inputs.coreFilter includes standard",
-        "expression": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json>",
+        "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ESEs-standard.json>",
         "enabled": true
       }
     ],
@@ -3043,7 +3067,7 @@
         "enabled": true
       },
       {
-        "expression": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-PSEs.json>",
+        "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-PSEs.json>",
         "enabled": true
       }
     ],
@@ -3059,7 +3083,7 @@
         "enabled": true
       },
       {
-        "expression": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-ISEs.json>",
+        "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Portuguese-SEL-Filtering-and-sorting/refs/heads/dev/AIOStreams-SyncedURLs/Tamtaro-synced-ISEs.json>",
         "enabled": true
       }
     ],
@@ -3067,7 +3091,7 @@
       "__if": "!inputs.misc.ignoreRSE",
       "__value": [
         {
-          "__if": "!inputs.languages includes German",
+          "__if": "!inputs.languages includes German or Portuguese (Brazil)",
           "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
           "score": 0,
           "enabled": true
@@ -3090,7 +3114,7 @@
           "enabled": true
         },
         {
-          "__if": "!inputs.languages includes German",
+          "__if": "!inputs.languages includes German or Portuguese (Brazil)",
           "expression": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json>",
           "score": 0,
           "enabled": true
@@ -3098,6 +3122,12 @@
         {
           "__if": "inputs.languages includes German",
           "expression": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/German/expressions.json>",
+          "score": 0,
+          "enabled": true
+        },
+        {
+          "__if": "inputs.languages includes Portuguese (Brazil)",
+          "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/expressions.json>",
           "score": 0,
           "enabled": true
         }

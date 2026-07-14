@@ -2549,13 +2549,13 @@
     "preferredRegexPatterns": [],
     "rankedRegexPatterns": [
       {
-        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+        "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
         "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
         "pattern": "/^(?!𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍))𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)$/",
         "score": 0
       },
       {
-        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+        "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
         "pattern": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json>",
         "name": "",
         "score": 0
@@ -2573,13 +2573,13 @@
         "score": 0
       },
       {
-        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
         "name": "Braresa'𝚜 Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
         "pattern": "/^(?!Braresa'𝚜 Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍))Braresa's Portuguese 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)$/",
         "score": 0
       },
       {
-        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
         "pattern": "<SYNCED: https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/regexes.json>",
         "name": "",
         "score": 0
@@ -2588,7 +2588,7 @@
     "syncedPreferredRegexUrls": [],
     "syncedRankedRegexUrls": [
       {
-        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+        "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/regexes.json"
         ]
@@ -2600,7 +2600,7 @@
         ]
       },
       {
-        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
         "__value": [
           "https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/regexes.json"
         ]
@@ -2628,7 +2628,7 @@
     ],
     "syncedRankedStreamExpressionUrls": [
       {
-        "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+        "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
         "__value": [
           "https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json"
         ]
@@ -2640,7 +2640,7 @@
         ]
       },
       {
-        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
         "__value": [
           "https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/expressions.json"
         ]
@@ -3091,7 +3091,7 @@
       "__if": "!inputs.misc.ignoreRSE",
       "__value": [
         {
-          "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+          "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
           "expression": "/*#𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 — 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍). 𝚄𝚜𝚎𝚍 𝚝𝚘 𝚜𝚌𝚘𝚛𝚎 𝚊𝚗𝚍 𝚝𝚊𝚐 𝚜𝚝𝚛𝚎𝚊𝚖𝚜, 𝚟𝚒𝚜𝚒𝚋𝚕𝚎 𝚒𝚗 𝚏𝚘𝚛𝚖𝚊𝚝𝚝𝚎𝚛.*/ []",
           "score": 0,
           "enabled": true
@@ -3108,13 +3108,13 @@
           "enabled": true
         },
         {
-          "__if": "inputs.languages includes Portuguese (Brazil)",
+          "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
           "expression": "/*#Sterzeck*/ /*PT-BR Group*/ releaseGroup(streams,'AlfaHD','BiOMA','BRHD','FileHD','FreedomHD','RiPER','PLuSHD','PlusHD','SiGLA','PD','FiDO','G4RiS','RK','MASTER','FOXX','GUEIRA','Cory','PirataDigital','RARBR','Shelby','TARS','Wyrm','Adamantium','Troidex','NEX','THR','MLH','WTV','VNLLS','ZMG','BAD','BIG','FF','ASY','AZX','C76','C0RAL','Extr3muss','DKS','GOT','100REAL','BDC','IZards','Emmid','Fantasma223','CBR','Xiquexique','Olympus','OscarNiemeyer','Tupac','Tijuco','Gris','ElM4g0','Fly','FranzOPL','LaPumia','Lukas','Lucano22','WitchHunter','Potatin','N3G4N','Shaka','Sacerdoti','UPD','Anonimo','Anonymous07','Byoutou','Estagiario','Madruga','LCD','LMB','LTDA','MDG','MiColeaoDublado','PIA','VARYG','ZNM','Yatogam1','CZA','JUS','3lton','AConduta','AmanteDoHarpia','ECK','FABR','FreddieGellar','INSS','SpaghettiMancer','TheCS','Titans','Siz3D','Netope','7Sprite7','ToonsHub')",
           "score": 10000,
           "enabled": true
         },
         {
-          "__if": "!inputs.languages includes German or Portuguese (Brazil)",
+          "__if": "!inputs.languages includes German or \"Portuguese (Brazil)\"",
           "expression": "<SYNCED: https://raw.githubusercontent.com/Vidhin05/Releases-Regex/main/English/expressions.json>",
           "score": 0,
           "enabled": true
@@ -3126,7 +3126,7 @@
           "enabled": true
         },
         {
-          "__if": "inputs.languages includes Portuguese (Brazil)",
+          "__if": "inputs.languages includes \"Portuguese (Brazil)\"",
           "expression": "<SYNCED: https://raw.githubusercontent.com/Braresa/Releases-Regex/main/Portuguese/expressions.json>",
           "score": 0,
           "enabled": true

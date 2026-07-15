@@ -4603,7 +4603,7 @@
     "serviceWrap": {
       "__if": "inputs.languages includes Portuguese (Brazil) and services",
       "__value": {
-        "enabled": true
+        "enabled": true,
         "reconfigureService": false,
         "presets": [
           "cd7"

@@ -4349,7 +4349,7 @@
             "category": "Subs"
           },
           {
-            "__if": "inputs.languages includes Portuguese (Brazil)"
+            "__if": "inputs.languages includes Portuguese (Brazil)",
             "type": "brazuca-torrents",
             "instanceId": "cd7",
             "enabled": true,

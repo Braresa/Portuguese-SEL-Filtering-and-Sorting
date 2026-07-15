@@ -5,7 +5,7 @@
     "description": "Fully configurable all-in-one setup based on Tamtaro's recommended filters, sort orders, and SELs described on the [GitHub](https://git.tamtaro.de). One template for both Debrid/Usenet or P2P users. \n\n * Guides you through API keys, language preferences, optional filters and smart passthroughs during import.\n * Comes with optional add-ons and optional formatter. \n * Dynamic core filtering options: Standard SEL (keeps ~20 results) or Extended SEL (keeps ~40).\n * Comes with auto-synced urls for SELs & [Vidhin's Regexes](https://github.com/Vidhin05/Releases-Regex) so you'll receive latest SEL hotfixes automatically. Set & forget.\n * **ⓘ For catalogs, check out GitHub for AIOMetadata configs.**",
     "source": "external",
     "author": "Braresa",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "category": "AIO",
     "serviceRequired": false,
     "changelogUrl": "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/CHANGELOG.md",
@@ -4347,6 +4347,21 @@
               "movieHashPlusAutoAdjustment": false
             },
             "category": "Subs"
+          },
+          {
+            "__if": "inputs.languages includes Portuguese (Brazil)"
+            "type": "brazuca-torrents",
+            "instanceId": "cd7",
+            "enabled": true,
+            "options": {
+              "name": "Brazuca Torrents",
+              "timeout": "{{inputs.includeAddon.timeout}}",
+              "resources": [
+                "stream"
+              ],
+              "url": ""
+            }
+            "category": "P2P"
           }
         ]
       }
@@ -4586,8 +4601,14 @@
     "autoRemoveDownloads": false,
     "checkOwned": true,
     "serviceWrap": {
-      "enabled": false,
-      "reconfigureService": false
+      "__if": "inputs.languages includes Portuguese (Brazil) and services",
+      "__value": {
+        "enabled": true
+        "reconfigureService": false,
+        "presets": [
+          "cd7"
+        ]
+      }
     },
     "nzbFailover": {
       "enabled": true,

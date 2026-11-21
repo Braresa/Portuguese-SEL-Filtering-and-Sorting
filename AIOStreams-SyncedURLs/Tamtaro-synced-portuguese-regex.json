@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Portuguese Regex v0.1.0",
+    "pattern": "/^(?!)$/i",
+    "score": 0
+  },
+  {
+    "name": "PT-BR Dual",
+    "pattern": "/^(?!.*(?<![a-z])(?:hindi|tamil|telugu|malayalam|kannada|bengali|marathi|punjabi|urdu|lat(?:ino|am)?|spa(?:nish)?|esp(?:a[ñn]ol)?|castellano|cast|ita(?:liano?)?|fre(?:nch)?|vf[f2iq]?|ger(?:man)?|deu|rus(?:sian)?|ukr|kor(?:ean)?|jap(?:anese)?|jpn|chi(?:nese)?|pol(?:ish)?|tur(?:kish)?|thai?|ara(?:bic)?|cze|hun|heb|vie|subs?|bolly4u|worldfree4u|hdhub4u|vegamovies|katmoviehd|mkvcinemas|moviesfd|tamilrockers|tamilblasters)(?![a-z]))(?!.*[Ѐ-ӿ]).*(?:[-.]dual[-.](?!(?:audio|aud|lat|latino|subs?|www|web|webrip|bd|bdrip|bluray|brrip|hdtv|[xh]\\.?26[45]|hevc|avc|dts|ac3|aac|ddp?|eac3|truehd|hdr|dv|sdr|\\d+p|uhd|remux|multi)(?![a-z0-9]))[a-z][a-z0-9]{1,15}(?:[-.](?:bludv|comando|sd))?(?:\\.(?:mkv|mp4|avi|m4v))?(?: ?\\(\\d\\))?$|\\bdual[ ._-]?áudio|\\bdual[ ._-](?:yg|www[. ]bludv))/i",
+    "score": 0
+  },
+  {
+    "name": "Dual",
+    "pattern": "/^(?!.*(?<![a-z])(?:hindi|tamil|telugu|malayalam|kannada|bengali|marathi|punjabi|urdu|lat(?:ino|am)?|spa(?:nish)?|esp(?:a[ñn]ol)?|castellano|cast|ita(?:liano?)?|fre(?:nch)?|vf[f2iq]?|ger(?:man)?|deu|rus(?:sian)?|ukr|kor(?:ean)?|jap(?:anese)?|jpn|chi(?:nese)?|pol(?:ish)?|tur(?:kish)?|thai?|ara(?:bic)?|cze|hun|heb|vie|subs?|bolly4u|worldfree4u|hdhub4u|vegamovies|katmoviehd|mkvcinemas|moviesfd|tamilrockers|tamilblasters)(?![a-z]))(?!.*[Ѐ-ӿ]).*(?:\\bdual(?:[ ._-]?(?:audio|aud)\\b|[ ._-]?áudio)?|\\b2[ ._-]?(?:audios|áudios))/i",
+    "score": 0
+  },
+  {
+    "name": "PT-BR Dub",
+    "pattern": "/\\b(?:redublad[oa]|dublad[oa]s?|dublagem|dub(?:lado)?[ ._-]?(?:pt[ ._-]?br|br|brasil(?:eira)?)|bra?[ ._-]?dub)\\b|^(?!.*(?<![a-z])(?:legendad[oa]s?|legendas?|(?:eng?|multi[ ._-]?)?subs?|subtitled?|subtitles)(?![a-z])).*\\b(?:pt[ ._-]?br|brazilian|portugu[eê]s[ ._-]?(?:do[ ._-]?)?(?:br|brasil(?:eiro)?)|por[ ._-]?br)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "Nacional",
+    "pattern": "/\\bnacional\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PT-BR Legendado",
+    "pattern": "/\\b(?:legendad[oa]s?|legendas?(?:[ ._-]?(?:pt[ ._-]?br|brazilian|portugu[eê]s[ ._-]?(?:do[ ._-]?)?(?:br|brasil(?:eiro)?)|por[ ._-]?br))?|leg[ ._-]?pt[ ._-]?br|subs?[ ._-]?pt[ ._-]?br|pt[ ._-]?br[ ._-]?subs?)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PT-PT",
+    "pattern": "/\\b(?:pt[ ._-]pt|ptpt|portugal|pt[ ._-]?eu|europeu)\\b/i",
+    "score": 0
+  },
+  {
+    "name": "PT Sites",
+    "pattern": "/\\b(?:comando(?:torrents?|[ ._-]?la|[ ._-]?to)?|bludv|lapumia|starckfilmes|torrent[ ._-]?dos[ ._-]?filmes|filmesbluraytorrent|thepiratefilmes|wolverdonfilmes|apachetorrent|vamostorrent)\\b/i",
+    "score": 0
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "expression": "/*#𝙲𝚞𝚜𝚝𝚘𝚖 𝙿𝚘𝚛𝚝𝚞𝚐𝚞𝚎𝚜𝚎 (𝙱𝚛𝚊𝚣𝚒𝚕) 𝙿𝚛𝚘𝚏𝚒𝚕𝚎 to use with 𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 English 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜*/ []",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*Portuguese RSE v0.1.0*/[]",
+    "score": 0,
+    "enabled": true
+  },
+  {
+    "expression": "/*PT Original*/ (originalLanguage == 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese', 'Original'), regexMatched(streams, 'Nacional'))) : []",
+    "score": 11000,
+    "enabled": true
+  },
+  {
+    "expression": "/*PT-BR Dual*/ (originalLanguage != 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original'))) : []",
+    "score": 11000,
+    "enabled": true
+  },
+  {
+    "expression": "/*PT-BR Dub*/ (originalLanguage != 'Portuguese') ? negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), regexMatched(streams, 'PT-PT')), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'Nacional'))) : []",
+    "score": 10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Dual sem outro sinal de PT-BR*/ /*PT-BR Dual?*/ (originalLanguage != 'Portuguese') ? (isAnime ? [] : negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT-PT')), regexMatched(streams, 'Dual'))) : []",
+    "score": 3000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Sterzeck + Braresa*/ /*PT-BR Group*/ releaseGroup(streams,'AlfaHD','BiOMA','BRHD','FileHD','FreedomHD','RiPER','PLuSHD','PlusHD','SiGLA','PD','FiDO','G4RiS','RK','MASTER','FOXX','GUEIRA','Cory','PirataDigital','RARBR','Shelby','TARS','Wyrm','Adamantium','Troidex','NEX','THR','MLH','WTV','VNLLS','ZMG','BAD','BIG','FF','ASY','AZX','C76','C0RAL','Extr3muss','DKS','GOT','100REAL','BDC','IZards','Emmid','Fantasma223','CBR','Xiquexique','Olympus','OscarNiemeyer','Tupac','Tijuco','Gris','ElM4g0','Fly','FranzOPL','LaPumia','Lukas','Lucano22','WitchHunter','Potatin','N3G4N','Shaka','Sacerdoti','UPD','Anonimo','Anonymous07','Byoutou','Estagiario','Madruga','LCD','LMB','LTDA','MDG','MiColeaoDublado','PIA','VARYG','ZNM','Yatogam1','CZA','JUS','3lton','AConduta','AmanteDoHarpia','ECK','FABR','FreddieGellar','INSS','SpaghettiMancer','TheCS','Titans','Siz3D','Netope','7Sprite7','ToonsHub','STARCKFILMES','BLUDV','MLD','ASM','SiSO','SLSS','CiNT','Tontom','DAViDSK8','RICKSZ','niltonctba','LOOPER','andrehsa','Franceira','SNERZ','FRNcR','Hiro360','Newtg','YG')",
+    "score": 10000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Português de Portugal*/ /*PT-PT*/ regexMatched(streams, 'PT-PT')",
+    "score": 5000,
+    "enabled": true
+  },
+  {
+    "expression": "/*#Original Audio + PT-BR Subs*/ /*PT-BR Legendado*/ negate(language(streams, 'Portuguese (Brazil)', 'Portuguese'), merge(regexMatched(streams, 'PT-BR Legendado'), subtitle(streams, 'Portuguese (Brazil)', 'Portuguese')))",
+    "score": 500,
+    "enabled": true
+  }
+]

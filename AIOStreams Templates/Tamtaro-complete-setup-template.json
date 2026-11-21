@@ -3072,6 +3072,18 @@
         "score": 0
       },
       {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "name": "𝙲𝚞𝚜𝚝𝚘𝚖 𝙿𝚘𝚛𝚝𝚞𝚐𝚞𝚎𝚜𝚎 (𝙱𝚛𝚊𝚣𝚒𝚕) 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜",
+        "pattern": "/^(?!𝙲𝚞𝚜𝚝𝚘𝚖 𝙿𝚘𝚛𝚝𝚞𝚐𝚞𝚎𝚜𝚎 (𝙱𝚛𝚊𝚣𝚒𝚕) 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜)𝙲𝚞𝚜𝚝𝚘𝚖 𝙿𝚘𝚛𝚝𝚞𝚐𝚞𝚎𝚜𝚎 (𝙱𝚛𝚊𝚣𝚒𝚕) 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜$/",
+        "score": 0
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "pattern": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-portuguese-regex.json>",
+        "name": "",
+        "score": 0
+      },
+      {
         "__if": "!inputs.languages includes German",
         "name": "𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)",
         "pattern": "/^(?!𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍))𝚅𝚒𝚍𝚑𝚒𝚗'𝚜 𝙴𝚗𝚐𝚕𝚒𝚜𝚑 𝚁𝚊𝚗𝚔𝚎𝚍 𝚁𝚎𝚐𝚎𝚡𝚎𝚜 (𝚜𝚢𝚗𝚌𝚎𝚍)$/",
@@ -3119,6 +3131,12 @@
         "__if": "inputs.languages includes French",
         "__value": [
           "https://git.tamtaro.de/French-Regex.json"
+        ]
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__value": [
+          "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-portuguese-regex.json"
         ]
       },
       {
@@ -3242,6 +3260,12 @@
         "__if": "inputs.languages includes French",
         "__value": [
           "https://git.tamtaro.de/French-RSE.json"
+        ]
+      },
+      {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "__value": [
+          "https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-portuguese-RSE.json"
         ]
       },
       {
@@ -3753,6 +3777,11 @@
         "enabled": true
       },
       {
+        "__if": "inputs.languages includes Portuguese (Brazil)",
+        "expression": "/*PT-BR Language Passthrough*/ originalLanguage == 'Portuguese' ? passthrough(merge(language(streams, 'Portuguese', 'Portuguese (Brazil)', 'Multi', 'Dual Audio', 'Unknown'), keyword(streams, 'filename,folderName', 'Nacional')), 'language') : passthrough(merge(keyword(streams, 'filename,folderName', 'Dublado', 'Dublada', 'Dublados', 'Redublado', 'Dublagem', 'Nacional', 'Dual Áudio'), language(streams, 'Portuguese', 'Portuguese (Brazil)')), 'language')",
+        "enabled": true
+      },
+      {
         "expression": "<SYNCED: https://git.tamtaro.de/ISE.json>",
         "enabled": true
       }
@@ -3780,8 +3809,20 @@
         },
         {
           "__if": "inputs.languages includes Portuguese (Brazil)",
-          "expression": "/*#Sterzeck*/ /*PT-BR Group*/ releaseGroup(streams,'AlfaHD','BiOMA','BRHD','FileHD','FreedomHD','RiPER','PLuSHD','PlusHD','SiGLA','PD','FiDO','G4RiS','RK','MASTER','FOXX','GUEIRA','Cory','PirataDigital','RARBR','Shelby','TARS','Wyrm','Adamantium','Troidex','NEX','THR','MLH','WTV','VNLLS','ZMG','BAD','BIG','FF','ASY','AZX','C76','C0RAL','Extr3muss','DKS','GOT','100REAL','BDC','IZards','Emmid','Fantasma223','CBR','Xiquexique','Olympus','OscarNiemeyer','Tupac','Tijuco','Gris','ElM4g0','Fly','FranzOPL','LaPumia','Lukas','Lucano22','WitchHunter','Potatin','N3G4N','Shaka','Sacerdoti','UPD','Anonimo','Anonymous07','Byoutou','Estagiario','Madruga','LCD','LMB','LTDA','MDG','MiColeaoDublado','PIA','VARYG','ZNM','Yatogam1','CZA','JUS','3lton','AConduta','AmanteDoHarpia','ECK','FABR','FreddieGellar','INSS','SpaghettiMancer','TheCS','Titans','Siz3D','Netope','7Sprite7','ToonsHub')",
-          "score": 10000,
+          "expression": "/*#𝙲𝚞𝚜𝚝𝚘𝚖 𝙿𝚘𝚛𝚝𝚞𝚐𝚞𝚎𝚜𝚎 (𝙱𝚛𝚊𝚣𝚒𝚕) 𝚁𝚊𝚗𝚔𝚎𝚍 𝚂𝚝𝚛𝚎𝚊𝚖 𝙴𝚡𝚙𝚛𝚎𝚜𝚜𝚒𝚘𝚗𝚜*/ []",
+          "score": 0,
+          "enabled": true
+        },
+        {
+          "__if": "inputs.languages includes Portuguese (Brazil)",
+          "expression": "<SYNCED: https://raw.githubusercontent.com/Tam-Taro/SEL-Filtering-and-Sorting/refs/heads/main/AIOStreams-SyncedURLs/Tamtaro-synced-portuguese-RSE.json>",
+          "score": 0,
+          "enabled": true
+        },
+        {
+          "__if": "inputs.languages == Portuguese (Brazil)",
+          "expression": "/*Non-PT*/ originalLanguage != 'Portuguese' and isAnime ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'Nacional', 'PT-PT', 'PT Sites', 'PT-BR Legendado'), language(streams, 'Portuguese', 'Portuguese (Brazil)'), subtitle(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : originalLanguage != 'Portuguese' ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'Nacional', 'PT-PT', 'PT Sites', 'Dual'), language(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : []",
+          "score": -10000,
           "enabled": true
         },
         {

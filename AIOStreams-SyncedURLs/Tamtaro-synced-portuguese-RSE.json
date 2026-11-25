@@ -10,32 +10,32 @@
     "enabled": true
   },
   {
-    "expression": "/*PT Original*/ (originalLanguage == 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese', 'Original'), regexMatched(streams, 'Nacional'))) : []",
+    "expression": "/*PT Original*/ (originalLanguage == 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese', 'Original'), regexMatched(streams, 'National'))) : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*PT-BR Dual*/ (originalLanguage != 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original'))) : []",
+    "expression": "/*PT-BR Dual*/ (originalLanguage != 'Portuguese') ? negate(regexMatched(streams, 'PT-PT'), merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'National', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original'))) : []",
     "score": 11000,
     "enabled": true
   },
   {
-    "expression": "/*PT-BR Dub*/ (originalLanguage != 'Portuguese') ? negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), regexMatched(streams, 'PT-PT')), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'Nacional'))) : []",
+    "expression": "/*PT-BR Dub*/ (originalLanguage != 'Portuguese') ? negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'National', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), regexMatched(streams, 'PT-PT')), merge(language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'National'))) : []",
     "score": 10000,
     "enabled": true
   },
   {
-    "expression": "/*#Dual sem outro sinal de PT-BR*/ /*PT-BR Dual?*/ (originalLanguage != 'Portuguese') ? (isAnime ? [] : negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'Nacional', 'PT-PT')), regexMatched(streams, 'Dual'))) : []",
+    "expression": "/*#Dual without any other PT-BR sign*/ /*PT-BR Dual?*/ (originalLanguage != 'Portuguese') ? (isAnime ? [] : negate(merge(merge(regexMatched(streams, 'PT-BR Dual'), regexMatched(merge(regexMatched(streams, 'PT-BR Dub', 'National', 'PT Sites'), language(streams, 'Portuguese (Brazil)', 'Portuguese')), 'Dual'), language(language(streams, 'Portuguese (Brazil)', 'Portuguese'), 'Original')), language(streams, 'Portuguese (Brazil)', 'Portuguese'), regexMatched(streams, 'PT-BR Dub', 'National', 'PT-PT')), regexMatched(streams, 'Dual'))) : []",
     "score": 3000,
     "enabled": true
   },
   {
-    "expression": "/*#Português de Portugal*/ /*PT-PT*/ regexMatched(streams, 'PT-PT')",
+    "expression": "/*#European Portuguese*/ /*PT-PT*/ regexMatched(streams, 'PT-PT')",
     "score": 5000,
     "enabled": true
   },
   {
-    "expression": "/*#Original Audio + PT-BR Subs*/ /*PT-BR Legendado*/ negate(language(streams, 'Portuguese (Brazil)', 'Portuguese'), merge(regexMatched(streams, 'PT-BR Legendado'), subtitle(streams, 'Portuguese (Brazil)', 'Portuguese')))",
+    "expression": "/*#Original Audio + PT-BR Subs*/ /*PT-BR Subbed*/ negate(language(streams, 'Portuguese (Brazil)', 'Portuguese'), merge(regexMatched(streams, 'PT-BR Subbed'), subtitle(streams, 'Portuguese (Brazil)', 'Portuguese')))",
     "score": 500,
     "enabled": true
   }

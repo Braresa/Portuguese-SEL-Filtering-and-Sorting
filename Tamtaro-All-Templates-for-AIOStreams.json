@@ -3828,7 +3828,7 @@
           },
           {
             "__if": "inputs.languages == Portuguese (Brazil)",
-            "expression": "/*Non-PT*/ originalLanguage != 'Portuguese' and isAnime ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'Nacional', 'PT-PT', 'PT Sites', 'PT-BR Legendado'), language(streams, 'Portuguese', 'Portuguese (Brazil)'), subtitle(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : originalLanguage != 'Portuguese' ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'Nacional', 'PT-PT', 'PT Sites', 'Dual'), language(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : []",
+            "expression": "/*Non-PT*/ originalLanguage != 'Portuguese' and isAnime ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'National', 'PT-PT', 'PT Sites', 'PT-BR Subbed'), language(streams, 'Portuguese', 'Portuguese (Brazil)'), subtitle(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : originalLanguage != 'Portuguese' ? negate(merge(regexMatched(streams, 'PT-BR Dual', 'PT-BR Dub', 'National', 'PT-PT', 'PT Sites', 'Dual'), language(streams, 'Portuguese', 'Portuguese (Brazil)')), streams) : []",
             "score": -10000,
             "enabled": true
           },

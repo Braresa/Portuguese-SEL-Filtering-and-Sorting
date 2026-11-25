@@ -20,12 +20,12 @@
     "score": 0
   },
   {
-    "name": "Nacional",
+    "name": "National",
     "pattern": "/\\bnacional\\b/i",
     "score": 0
   },
   {
-    "name": "PT-BR Legendado",
+    "name": "PT-BR Subbed",
     "pattern": "/\\b(?:legendad[oa]s?|legendas?(?:[ ._-]?(?:pt[ ._-]?br|brazilian|portugu[eê]s[ ._-]?(?:do[ ._-]?)?(?:br|brasil(?:eiro)?)|por[ ._-]?br))?|leg[ ._-]?pt[ ._-]?br|subs?[ ._-]?pt[ ._-]?br|pt[ ._-]?br[ ._-]?subs?)\\b/i",
     "score": 0
   },
